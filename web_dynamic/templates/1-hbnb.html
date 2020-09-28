@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
-    <SCRIPT src="static/scripts/1-hbnb.js?{{ cache_id }}"></SCRIPT>
+    <SCRIPT src="../static/scripts/1-hbnb.js?{{ cache_id }}"></SCRIPT>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../static/styles/4-common.css?{{ cache_id }}">
     <link rel="stylesheet" type="text/css" href="../static/styles/3-header.css?{{ cache_id }}">
@@ -42,7 +42,9 @@
 	  <div class="popover">
 	    <ul>
 	      {% for amenity in amenities %}
-	      <input type="checkbox" data-id="{{ amty.id }}" data-name="{{ amty.name }}">{{ amty.name }}
+	      <li> <input type="checkbox" data-id="{{ amenity.id }}" data-name="{{ amenity.name }}">
+			{{ amenity.name }}
+			  </li>
 	      {% endfor %}
 	    </ul>
 	  </div>
