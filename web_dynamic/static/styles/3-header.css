@@ -3,9 +3,30 @@ header {
     height: 70px;
     width: 100%;
     border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    
 }
 header .logo {
     background: url("../images/logo.png") no-repeat;
-    left: 20px;
+    margin-left: 20px;
     height: 100%;
+    width: 70%;
+   
+}
+#api_status {
+    margin-right: 30px;
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 70%;
+    
+    background-color: #cccccc;
+    align-items: center;
+    justify-content: space-between;
+}
+#api_status.available {
+    background-color: #ff545f;
 }
